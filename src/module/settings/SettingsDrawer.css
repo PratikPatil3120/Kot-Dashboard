@@ -1,0 +1,104 @@
+.settings-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+/* Default drawer styling */
+.settings-drawer {
+  height: auto;
+  max-height: 80%;
+  width: 280px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s ease;
+  transition:
+    background 0.3s,
+    color 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* spacing between sections */
+  overflow-y: auto; /* scroll if content exceeds max-height */
+}
+
+/* DARK THEME */
+.settings-drawer.dark {
+  background: #020617;
+  color: white;
+}
+
+/* LIGHT THEME */
+.settings-drawer.light {
+  background: #ffffff;
+  color: #000;
+}
+
+/* Inputs & selects adapt to theme */
+.settings-drawer.dark input,
+.settings-drawer.dark select {
+  background: #020617;
+  color: white;
+  border: 1px solid #334155;
+}
+
+.settings-drawer.light input,
+.settings-drawer.light select {
+  background: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+/* Setting item layout */
+.setting-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.setting-item label {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+.setting-item input,
+.setting-item select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  font-size: 14px;
+}
+
+/* Close button */
+.close-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background: #22c55e;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.close-btn:hover {
+  background: #16a34a;
+}
+
+/* Drawer slide animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

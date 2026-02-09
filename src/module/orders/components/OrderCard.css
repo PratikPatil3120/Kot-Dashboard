@@ -1,0 +1,67 @@
+.view-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 6px;
+  color: #2563eb;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.view-btn:hover {
+  color: #1d4ed8;
+}
+
+.view-btn:focus {
+  outline: none;
+}
+
+/* OPTIONAL */
+.kot-card {
+  padding: 12px;
+  border-radius: 8px;
+}
+.kot-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+/* Priority dots */
+.priority-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.priority-dot.high {
+  background: red;
+}
+
+.priority-dot.medium {
+  background: orange;
+}
+
+.priority-dot.low {
+  background: green;
+}
+
+.kot-empty {
+  text-align: center;
+  padding: 12px 8px;
+  font-size: 13px;
+  color: #64748b;
+  background-color: #f8fafc;
+  border-radius: 6px;
+  margin: 6px;
+  border: 1px dashed #cbd5e1;
+  transition: all 0.3s ease;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

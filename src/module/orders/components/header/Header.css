@@ -1,0 +1,128 @@
+.app-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-bottom: 1px solid #1e293b;
+  gap: 12px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-search:focus {
+  outline: none;
+  border-color: #22c55e;
+}
+
+.settings-btn {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.settings-btn:hover {
+  color: rgba(114, 136, 150, 0.817);
+}
+
+.kot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+
+  /* New shadow and curve */
+  border-radius: 12px; /* rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-menu {
+  position: relative;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color: black;
+  padding: 8px 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+
+.logout-btn {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: red;
+  font-weight: 500;
+}
+
+/* User icon button */
+.user-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #94a3b8;
+  transition:
+    color 0.2s,
+    transform 0.2s;
+}
+
+.user-btn:hover {
+  color: #485567;
+  transform: scale(1.1);
+}
+
+.header-search {
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 160px;
+  font-size: 15px;
+}
+
+.analytics-btn {
+  padding: 4px 8px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #22c55e;
+  background-color: #22c55e;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 400;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+
+.analytics-btn:hover {
+  background-color: #16a34a;
+  transform: translateY(-1px);
+}

@@ -1,0 +1,52 @@
+/* Analytics stat cards container */
+.analytics-stats {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* Individual stat card */
+.stat-box {
+  flex: 1 1 150px;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+/* Hover effect */
+.stat-box:hover {
+  transform: translateY(-3px);
+}
+
+/* Card title */
+.stat-box h5 {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Card value */
+.stat-box p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+/* Optionally, color code cards */
+.stat-box.pending {
+  background-color: #eef2ff;
+}
+
+.stat-box.avg-time {
+  background-color: #fef3c7;
+}
+
+.stat-box.most-item {
+  background-color: #dcfce7;
+}

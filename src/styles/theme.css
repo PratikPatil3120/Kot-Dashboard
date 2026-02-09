@@ -1,0 +1,33 @@
+body {
+  font-family: Arial;
+}
+
+.board {
+  display: flex;
+  gap: 16px;
+}
+
+.column {
+  width: 25%;
+  background: #f4f4f4;
+  padding: 10px;
+}
+
+.card {
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.green { border-left: 5px solid green; }
+.yellow { border-left: 5px solid orange; }
+.red { border-left: 5px solid red; }
+
+.center {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
