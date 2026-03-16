@@ -10,8 +10,6 @@ import { ORDER_STATUS } from "../../../shared/utils/constants";
 export default function OrderBoard({ orders: ordersProp }) {
   const orders = ordersProp || useOrdersStore((s) => s.orders);
 
-  console.log("hello Goolgle", Google);
-
   const addOrder = useOrdersStore((s) => s.addOrder);
   const updateStatus = useOrdersStore((s) => s.updateStatus);
 
